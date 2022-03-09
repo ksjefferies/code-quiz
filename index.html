@@ -6,47 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
-
 
     <title>Code Quiz</title>
 
 </head>
 
 <body>
-    <header>
-        <!-- Display the countdown timer in an element -->
+    <header class="header-container">
+        <p>High Score</p>
 
-        <progress value="0" max="60" id="progressBar"></progress>
-        <div id="countdown"></div>
+        <div id="timer" class="header-timer">
+            <!-- Display the countdown timer in an element -->
+            <progress value="0" max="60" id="progressBar"></progress>
+            <div id="countdown"></div>
+        </div>
     </header>
+    <div class="wrapper">
+        <div class="container">
+            <h2>Coding Quiz</h2>
 
-    <main>
-        <form>
-            <!-- Create lables in a UL to select password criteria -->
-            <ul>
-                <li>
-                    <label> <input type="checkbox" id="answerOne"> - A1 </label>
-                </li>
-                <li>
-                    <label> <input type="checkbox" id="answerTwo"> - A2 </label>
-                </li>
-                <li>
-                    <label> <input type="checkbox" id="answerThree"> - A3 </label>
-                </li>
-                <li>
-                    <label> <input type="checkbox" id="answerFour"> - A4 </label>
-                </li>
-            </ul>
-        </form>
+            <div id="question-contaimer" class="hide">
+                <div id="question"></div>
 
+            </div>
+            <div class="controls">
+                <input type="radio" id="answer-true" name="True" value="true">
+                <label for="answer-true">true</label><br>
 
-    </main>
-
-
-
-
-
+                <input type="radio" id="answer-false" name="False" value="false">
+                <label for="answer-false">false</label><br>
+            </div>
+            <button id="start">Start</button>
+            <button id="next" class="hidden">Next</button>
+        </div>
+        <script src="./script.js"></script>
 </body>
 
 </html>
