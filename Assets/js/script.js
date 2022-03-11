@@ -1,20 +1,20 @@
 // HTML DOM Get modifiers
-let startButton = document.getElementById('start');
-let scoreboardButton = document.getElementById('viewHigh')
-let nextButton = document.getElementById('next');
-let resetButton = document.getElementById('reset')
-let answerTrue = document.getElementById('answer-true');
-let answerFalse = document.getElementById('answer-false');
-let questionElement = document.getElementById('question');
-let progressBar = document.getElementById('progressBar');
-let countdown = document.getElementById('countdown');
-let resetScore = document.getElementById('resetScore')
-let scoreList = document.getElementById('scoreList')
+var startButton = document.getElementById('start');
+var scoreboardButton = document.getElementById('viewHigh')
+var nextButton = document.getElementById('next');
+var resetButton = document.getElementById('reset')
+var answerTrue = document.getElementById('answer-true');
+var answerFalse = document.getElementById('answer-false');
+var questionElement = document.getElementById('question');
+var progressBar = document.getElementById('progressBar');
+var countdown = document.getElementById('countdown');
+var resetScore = document.getElementById('resetScore')
+var scoreList = document.getElementById('scoreList')
 
-let input = document.getElementsByTagName('input');
-let labels = document.getElementsByTagName('label');
+var input = document.getElementsByTagName('input');
+var labels = document.getElementsByTagName('label');
 
-let createLi = document.createElement('li')
+var createLi = document.createElement('li')
 
 // HTML DOM Set attributes
 progressBar.setAttribute('value', '0', 'max', '60');
@@ -31,12 +31,12 @@ answerTrue.addEventListener('click', buttonTrueCheck)
 answerFalse.addEventListener('click', buttonFalseCheck)
 
 // Global Variables
-let secondsLeft = 45; // Timer initial setting
-let questionIndex = 0; // Question array index
-let answers = [] // Input answers empty array
-let scoreboard = []
-let vis = 0;  // //Increment visibility value
-let downloadTimer // timer variable
+var secondsLeft = 45; // Timer initial setting
+var questionIndex = 0; // Question array index
+var answers = [] // Input answers empty array
+var scoreboard = []
+var vis = 0;  // //Increment visibility value
+var downloadTimer // timer variable
 labels[0].classList.add('hidden')
 
 // First time initalization including timer start
@@ -70,7 +70,7 @@ function showQuestion(question) {
 
 // check state of radio box and sets true and false value
 function checkValue() {
-  let selectedAnswer;
+  var selectedAnswer;
   if (answerTrue.checked) {
     selectedAnswer = 'true';
   }
@@ -82,7 +82,7 @@ function checkValue() {
 
 // decrement time value on false answers
 function penalty() {
-  let i = questionIndex
+  var i = questionIndex
 
   if (answers.slice(-1) != questionBank[i].answer) {
     secondsLeft -= 10;
@@ -92,10 +92,10 @@ function penalty() {
 
 // Calc total score by comparing given answers with answers in question bank
 function calcScore(score) {
-  let grade = 0;
-  let trueAnswers = 0
+  var grade = 0;
+  var trueAnswers = 0
 
-  for (let i = 0; i < score.length; i++) {
+  for (var i = 0; i < score.length; i++) {
     if (score[i] == questionBank[i].answer) {
       trueAnswers++
     }
@@ -139,7 +139,7 @@ function highScore(score) {
 // Appends the high scores list item into the HTML from local storage
 function displayScoreboard() {
   var pulledItem = getHighScore()
-  for (let i = 0; i < pulledItem.length; i++) {
+  for (var i = 0; i < pulledItem.length; i++) {
     var createLi = document.createElement('li');
     createLi.innerHTML = pulledItem[i].user + " - " + pulledItem[i].highScore
     scoreList.appendChild(createLi)
@@ -218,7 +218,7 @@ function visibility(value) {
 }
 
 //Questions / Answers Array of Objects
-let questionBank = [
+var questionBank = [
   {
     prompt: 'The number 5 plus the string five equals 10.',
     answer: 'false',
