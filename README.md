@@ -17,9 +17,11 @@ In this project, i did the following:
 
 ## Final screenshots of initial and results page
 
-![Screenshot of initial Password Generator webpage](./assets/images/password-generator-initial.png)
+![Screenshot of initial Coding Quiz start page](./assets/images/coding-quiz.png)
 
-![Screenshot of final Password Generator webpage](./assets/images/password-generator-results.png)
+![Screenshot of quiz question](./assets/images/quiz-question.png)
+
+![Screenshot of local storage high score list](./assets/images/high-score.png)
 
 -----
 ## Links for Github Repository and final public page
@@ -31,7 +33,7 @@ In this project, i did the following:
 ## Contributions and sources:
 
 - [Creating online Quizzes](https://www.youtube.com/watch?v=LQGTb112N_c)
-- [Creating online Quizzed](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- [Creating online Quizzes](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
 I worked with the following people:
 - Daniel Norred
