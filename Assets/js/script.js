@@ -37,6 +37,7 @@ let answers = [] // Input answers empty array
 let scoreboard = []
 let vis = 0;  // //Increment visibility value
 let downloadTimer // timer variable
+labels[0].classList.add('hidden')
 
 // First time initalization including timer start
 function startQuiz() {
