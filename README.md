@@ -17,11 +17,11 @@ In this project, i did the following:
 
 ## Final screenshots of initial and results page
 
-![Screenshot of initial Coding Quiz start page](./assets/images/coding-quiz.jpeg)
+![Screenshot of initial Coding Quiz start page](./Assets/images/coding-quiz.jpeg)
 
-![Screenshot of quiz question](./assets/images/quiz-question.jpeg)
+![Screenshot of quiz question](./Assets/images/quiz-question.jpeg)
 
-![Screenshot of local storage high score list](./assets/images/high-score.jpeg)
+![Screenshot of local storage high score list](./Assets/images/high-score.jpeg)
 
 -----
 ## Links for Github Repository and final public page
