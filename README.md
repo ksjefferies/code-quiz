@@ -1,5 +1,6 @@
 # Code Quiz
 
+-----
 ## Objectives
 
 In this project, i did the following:
@@ -14,7 +15,6 @@ In this project, i did the following:
 - Player can click button to see the high score list or click try again to restart quiz
 
 -----
-
 ## Final screenshots of initial and results page
 
 ![Screenshot of initial Coding Quiz start page](./Assets/images/coding-quiz.jpeg)
@@ -30,14 +30,17 @@ In this project, i did the following:
 
 - [Code Quiz final page](https://ksjefferies.github.io/code-quiz/)
 
-## Contributions and sources:
+## Author:
 
-- [Creating online Quizzes](https://www.youtube.com/watch?v=LQGTb112N_c)
-- [Creating online Quizzes](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- [Kelly Jefferies](https://github.com/ksjefferies)
 
-I worked with the following people:
-- Daniel Norred
-- Eugene
+## Technologies Used:
+
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 ## License
-This code is licensed under the MIT License
+
+[![License](https://img.shields.io/badge/License-MIT%20License-Green)](http://choosealicense.com/licenses/mit/)
